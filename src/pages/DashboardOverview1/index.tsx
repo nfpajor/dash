@@ -15,6 +15,7 @@ import Table from "@/components/Base/Table";
 import { useState, useRef } from "react";
 import clsx from "clsx";
 import _ from "lodash";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function Main() {
   const [generalReportFilter, setGeneralReportFilter] = useState<string>();
