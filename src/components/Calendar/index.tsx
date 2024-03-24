@@ -16,14 +16,14 @@ function Main() {
       center: "title",
       right: "dayGridMonth,timeGridWeek,timeGridDay,listWeek",
     },
-    initialDate: "2044-01-01",
+    initialDate: "2045-01-01",
     navLinks: true,
     editable: true,
     dayMaxEvents: true,
     events: [
       {
         title: events.fakeEvents()[0].title,
-        start: "2044-01-01",
+        start: "2045-01-01",
         end: "2045-01-05",
       },
       {
