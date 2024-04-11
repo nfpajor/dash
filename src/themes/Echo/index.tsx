@@ -20,6 +20,8 @@ import QuickSearch from "@/components/QuickSearch";
 import SwitchAccount from "@/components/SwitchAccount";
 import NotificationsPanel from "@/components/NotificationsPanel";
 import ActivitiesPanel from "@/components/ActivitiesPanel";
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 function Main() {
   const dispatch = useAppDispatch();
@@ -86,7 +88,9 @@ function Main() {
   };
 
   return (
+
     <div
+
       className={clsx([
         "echo group bg-gradient-to-b from-slate-200/70 to-slate-50 background relative min-h-screen",
         "before:content-[''] before:h-[370px] before:w-screen before:bg-gradient-to-t before:from-theme-1/80 before:to-theme-2 [&.background--hidden]:before:opacity-0 before:transition-[opacity,height] before:ease-in-out before:duration-300 before:top-0 before:fixed",
@@ -94,6 +98,8 @@ function Main() {
         topBarActive && "background--hidden",
       ])}
     >
+      <Analytics/>
+      <SpeedInsights/>
       <div
         className={clsx([
           "xl:ml-0 shadow-xl transition-[margin,padding] duration-300 xl:shadow-none fixed top-0 left-0 z-50 side-menu group inset-y-0 xl:py-3.5 xl:pl-3.5",
