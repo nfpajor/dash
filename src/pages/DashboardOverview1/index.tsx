@@ -76,7 +76,87 @@ function Main() {
           </div>
         </div>
         <div className="grid grid-cols-12 gap-5 mt-3.5">
-
+          <div className="col-span-12 p-1 md:col-span-6 2xl:col-span-3 box box--stacked">
+            <div className="-mx-1 overflow-hidden h-[244px] [&_.tns-nav]:bottom-auto [&_.tns-nav]:w-auto [&_.tns-nav]:ml-5 [&_.tns-nav]:mt-5 [&_.tns-nav_button]:w-2 [&_.tns-nav_button]:h-2 [&_.tns-nav_button.tns-nav-active]:w-5 [&_.tns-nav_button]:mx-0.5 [&_.tns-nav_button]:bg-white/40 [&_.tns-nav_button.tns-nav-active]:bg-white/70">
+              <TinySlider options={{ mode: "gallery", nav: true }}>
+                <div className="px-1">
+                  <div className="overflow-hidden relative flex flex-col w-full h-full p-5 rounded-[0.5rem] bg-gradient-to-b from-theme-2/90 to-theme-1/[0.85]">
+                    <Lucide
+                      icon="Medal"
+                      className="absolute top-0 right-0 w-36 h-36 -mt-5 -mr-5 text-white/20 fill-white/[0.03] transform rotate-[-10deg] stroke-[0.3]"
+                    />
+                    <div className="mt-12 mb-9">
+                      <div className="text-2xl font-medium leading-snug text-white">
+                        New feature
+                        <br />
+                        unlocked!
+                      </div>
+                      <div className="mt-1.5 text-lg text-white/70">
+                        Boost your performance!
+                      </div>
+                    </div>
+                    <a
+                      className="flex items-center font-medium text-white"
+                      href=""
+                    >
+                      Upgrade now
+                      <Lucide icon="MoveRight" className="w-4 h-4 ml-1.5" />
+                    </a>
+                  </div>
+                </div>
+                <div className="px-1">
+                  <div className="overflow-hidden relative flex flex-col w-full h-full p-5 rounded-[0.5rem] bg-gradient-to-b from-theme-2/90 to-theme-1/90">
+                    <Lucide
+                      icon="Database"
+                      className="absolute top-0 right-0 w-36 h-36 -mt-5 -mr-5 text-white/20 fill-white/[0.03] transform rotate-[-10deg] stroke-[0.3]"
+                    />
+                    <div className="mt-12 mb-9">
+                      <div className="text-2xl font-medium leading-snug text-white">
+                        Stay ahead
+                        <br />
+                        with upgrades
+                      </div>
+                      <div className="mt-1.5 text-lg text-white/70">
+                        New features and updates!
+                      </div>
+                    </div>
+                    <a
+                      className="flex items-center font-medium text-white"
+                      href=""
+                    >
+                      Discover now
+                      <Lucide icon="ArrowRight" className="w-4 h-4 ml-1.5" />
+                    </a>
+                  </div>
+                </div>
+                <div className="px-1">
+                  <div className="overflow-hidden relative flex flex-col w-full h-full p-5 rounded-[0.5rem] bg-gradient-to-b from-theme-2/90 to-theme-1/90">
+                    <Lucide
+                      icon="Gauge"
+                      className="absolute top-0 right-0 w-36 h-36 -mt-5 -mr-5 text-white/20 fill-white/[0.03] transform rotate-[-10deg] stroke-[0.3]"
+                    />
+                    <div className="mt-12 mb-9">
+                      <div className="text-2xl font-medium leading-snug text-white">
+                        Supercharge
+                        <br />
+                        your workflow
+                      </div>
+                      <div className="mt-1.5 text-lg text-white/70">
+                        Boost performance!
+                      </div>
+                    </div>
+                    <a
+                      className="flex items-center font-medium text-white"
+                      href=""
+                    >
+                      Get started
+                      <Lucide icon="ArrowRight" className="w-4 h-4 ml-1.5" />
+                    </a>
+                  </div>
+                </div>
+              </TinySlider>
+            </div>
+          </div>
           <div className="flex flex-col col-span-12 p-5 md:col-span-6 2xl:col-span-3 box box--stacked">
             <Menu className="absolute top-0 right-0 mt-5 mr-5">
               <Menu.Button className="w-5 h-5 text-slate-500">
