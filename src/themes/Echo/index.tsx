@@ -21,7 +21,7 @@ import SwitchAccount from "@/components/SwitchAccount";
 import NotificationsPanel from "@/components/NotificationsPanel";
 import ActivitiesPanel from "@/components/ActivitiesPanel";
 import { Analytics } from "@vercel/analytics/react"
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function Main() {
   const dispatch = useAppDispatch();
@@ -99,7 +99,7 @@ function Main() {
       ])}
     >
       <Analytics/>
-
+      <SpeedInsights/>
       <div
         className={clsx([
           "xl:ml-0 shadow-xl transition-[margin,padding] duration-300 xl:shadow-none fixed top-0 left-0 z-50 side-menu group inset-y-0 xl:py-3.5 xl:pl-3.5",
